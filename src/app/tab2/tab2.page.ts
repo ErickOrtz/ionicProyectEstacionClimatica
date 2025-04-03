@@ -22,7 +22,7 @@ export class Tab2Page implements OnInit {
       (data) => {
         console.log(data);
         // Filtramos solo las lecturas de "Luvianos"
-        this.lecturas = data.filter(lectura => lectura.lugarEstacion === "Luvianos");
+        this.lecturas = data.filter(lectura => lectura.lugarEstacion === "Luvianos" && lectura.id === 9);  
       },
       (error) => {
         console.error('Error al obtener lecturas:', error);
