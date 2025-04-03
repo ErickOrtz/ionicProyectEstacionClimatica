@@ -5,6 +5,6 @@
         "use": "@vercel/angular"
       }
     ],
-    "outputDirectory": "www"
+    "outputDirectory": "dist/"
   }
   
