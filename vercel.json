@@ -1,15 +1,16 @@
 {
-    "version": 2,
     "builds": [
       {
         "src": "angular.json",
         "use": "@vercel/angular"
       }
     ],
+    "outputDirectory": "www/index.html",
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/www/$1"
+        "dest": "/index.html"
       }
     ]
   }
+  
