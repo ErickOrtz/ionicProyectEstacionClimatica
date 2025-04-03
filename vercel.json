@@ -1,0 +1,10 @@
+{
+    "builds": [
+      {
+        "src": "angular.json",
+        "use": "@vercel/angular"
+      }
+    ],
+    "outputDirectory": "www"
+  }
+  
