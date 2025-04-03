@@ -7,6 +7,10 @@
     ],
     "routes": [
         {
+            "src": "/",
+            "dest": "/tabs/app.component.html"
+        },
+        {
             "src": "/(.*)",
             "dest": "/$1"
         }
