@@ -10,11 +10,17 @@ import { HttpClient } from '@angular/common/http';
 export class Tab3Page implements OnInit {
   lecturas: any[] = [];
   apiUrl: string = 'https://joyful-radiance-production.up.railway.app/lectura/obtenerLecturas';
-
+  intervalId: any;
+  
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.obtenerLecturas();
+
+       // Configurar un intervalo para actualizar las lecturas cada 5 segundos
+       this.intervalId = setInterval(() => {
+        this.obtenerLecturas();
+      }, 5000);
   }
 
   obtenerLecturas() {
