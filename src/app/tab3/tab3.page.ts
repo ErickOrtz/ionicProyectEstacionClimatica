@@ -22,7 +22,7 @@ export class Tab3Page implements OnInit {
       (data) => {
         // Filtramos las lecturas cuyo lugar NO sea "Luvianos"
         console.log(data);
-        this.lecturas = data.filter(lectura => lectura.lugarEstacion !== "Luvianos");
+        this.lecturas = data.filter(lectura => lectura.lugarEstacion == "LuviaSan Miguel Ixtapannos" && lectura.id == 10);
       },
       (error) => {
         console.error('Error al obtener lecturas:', error);
